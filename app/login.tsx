@@ -30,7 +30,7 @@ export default function LoginScreen() {
 
     try {
       await dispatch(login(email, password));
-      router.replace("/(tabs)/book-list/book-list");
+      router.replace("/(tabs)/book-list");
     } catch (err) {
       const errorMessage =
         err instanceof Error ? err.message : "Invalid credentials";

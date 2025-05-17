@@ -42,7 +42,7 @@ export default function Index() {
       if (isRouterReady && !isLoading) {
         try {
           if (user) {
-            router.replace("/(tabs)/book-list/book-list");
+            router.replace("/(tabs)/book-list");
           } else {
             router.replace("/login");
           }
